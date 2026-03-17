@@ -6,14 +6,12 @@ build-backend = "setuptools.build_meta"
 name = "jsonmd-format"
 version = "0.1.0"
 description = "Append .jsonmd to any API endpoint. Get Markdown back. Save 15-55% LLM tokens."
-readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 keywords = ["json", "markdown", "llm", "tokens", "middleware", "fastapi", "mcp"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
