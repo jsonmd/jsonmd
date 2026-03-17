@@ -1,5 +1,5 @@
 {
-  "name": "jsonmd",
+  "name": "@jsonmd/core",
   "version": "0.1.0",
   "description": "Append .jsonmd to any API endpoint. Get Markdown back. Save 15-55% LLM tokens.",
   "type": "module",
