@@ -22,9 +22,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
-          cache-dependency-path: packages/core-js/pnpm-lock.yaml
-      - run: pnpm install
-        working-directory: packages/core-js
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
         working-directory: packages/core-js
       - run: pnpm test
