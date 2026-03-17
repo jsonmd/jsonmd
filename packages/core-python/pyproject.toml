@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "jsonmd"
+name = "jsonmd-format"
 version = "0.1.0"
 description = "Append .jsonmd to any API endpoint. Get Markdown back. Save 15-55% LLM tokens."
 readme = "README.md"
