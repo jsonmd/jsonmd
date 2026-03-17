@@ -1,0 +1,64 @@
+{
+  "name": "jsonmd",
+  "version": "0.1.0",
+  "description": "Append .jsonmd to any API endpoint. Get Markdown back. Save 15-55% LLM tokens.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "jsonmd": "./dist/cli.js",
+    "jsonmd-proxy": "./dist/proxy.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsup --watch"
+  },
+  "keywords": [
+    "json",
+    "markdown",
+    "llm",
+    "tokens",
+    "middleware",
+    "express",
+    "hono",
+    "mcp",
+    "api"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "express": ">=4",
+    "hono": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "hono": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsup": "^8.0.0",
+    "vitest": "^2.0.0",
+    "supertest": "^7.0.0",
+    "express": "^4.21.0",
+    "hono": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/express": "^5.0.0",
+    "@types/supertest": "^6.0.0"
+  }
+}

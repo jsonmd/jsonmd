@@ -1,0 +1,7 @@
+{
+  "name": "jsonmd",
+  "version": "0.1.0",
+  "description": "JSON to Markdown converter",
+  "license": "MIT",
+  "author": "jsonmd team"
+}

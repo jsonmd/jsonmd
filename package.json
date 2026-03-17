@@ -1,0 +1,14 @@
+{
+  "name": "jsonmd-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "test:js": "pnpm --filter jsonmd test",
+    "test:py": "cd packages/core-python && pytest",
+    "clean": "pnpm -r exec rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

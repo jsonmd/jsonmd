@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tgz
+.DS_Store
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+*.lock
+!pnpm-lock.yaml

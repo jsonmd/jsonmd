@@ -1,0 +1,12 @@
+[
+  {"id": 1, "name": "Alice Johnson", "email": "alice@example.com", "role": "admin", "active": true},
+  {"id": 2, "name": "Bob Smith", "email": "bob@example.com", "role": "editor", "active": true},
+  {"id": 3, "name": "Charlie Brown", "email": "charlie@example.com", "role": "viewer", "active": false},
+  {"id": 4, "name": "Diana Prince", "email": "diana@example.com", "role": "admin", "active": true},
+  {"id": 5, "name": "Eve Wilson", "email": "eve@example.com", "role": "editor", "active": true},
+  {"id": 6, "name": "Frank Castle", "email": "frank@example.com", "role": "viewer", "active": false},
+  {"id": 7, "name": "Grace Hopper", "email": "grace@example.com", "role": "admin", "active": true},
+  {"id": 8, "name": "Hank Pym", "email": "hank@example.com", "role": "editor", "active": true},
+  {"id": 9, "name": "Iris West", "email": "iris@example.com", "role": "viewer", "active": true},
+  {"id": 10, "name": "Jack Ryan", "email": "jack@example.com", "role": "admin", "active": true}
+]

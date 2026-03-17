@@ -1,0 +1,139 @@
+{
+  "tools": [
+    {
+      "name": "get_weather",
+      "description": "Get current weather for a location",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "location": {"type": "string", "description": "City name or zip code"},
+          "units": {"type": "string", "description": "Temperature units (celsius, fahrenheit)"}
+        },
+        "required": ["location"]
+      }
+    },
+    {
+      "name": "create_issue",
+      "description": "Create a GitHub issue",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "owner": {"type": "string", "description": "Repository owner"},
+          "repo": {"type": "string", "description": "Repository name"},
+          "title": {"type": "string", "description": "Issue title"},
+          "body": {"type": "string", "description": "Issue body"},
+          "labels": {"type": "array", "items": {"type": "string"}, "description": "Labels to add"}
+        },
+        "required": ["owner", "repo", "title"]
+      }
+    },
+    {
+      "name": "search_documents",
+      "description": "Search documents in the knowledge base",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string", "description": "Search query"},
+          "limit": {"type": "number", "description": "Maximum results to return"},
+          "filters": {"type": "object", "description": "Optional filters"}
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email message",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "to": {"type": "string", "description": "Recipient email address"},
+          "subject": {"type": "string", "description": "Email subject"},
+          "body": {"type": "string", "description": "Email body (HTML or plain text)"},
+          "cc": {"type": "array", "items": {"type": "string"}, "description": "CC recipients"},
+          "bcc": {"type": "array", "items": {"type": "string"}, "description": "BCC recipients"}
+        },
+        "required": ["to", "subject", "body"]
+      }
+    },
+    {
+      "name": "execute_sql",
+      "description": "Execute a SQL query on the database",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string", "description": "SQL query to execute"},
+          "database": {"type": "string", "description": "Target database name"},
+          "timeout": {"type": "number", "description": "Query timeout in seconds"}
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "create_calendar_event",
+      "description": "Create a new calendar event",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string", "description": "Event title"},
+          "start": {"type": "string", "description": "Start time (ISO 8601)"},
+          "end": {"type": "string", "description": "End time (ISO 8601)"},
+          "description": {"type": "string", "description": "Event description"},
+          "attendees": {"type": "array", "items": {"type": "string"}, "description": "Email addresses of attendees"},
+          "location": {"type": "string", "description": "Event location"}
+        },
+        "required": ["title", "start", "end"]
+      }
+    },
+    {
+      "name": "get_stock_price",
+      "description": "Get current stock price and market data",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {"type": "string", "description": "Stock ticker symbol"},
+          "include_history": {"type": "boolean", "description": "Include 30-day price history"}
+        },
+        "required": ["symbol"]
+      }
+    },
+    {
+      "name": "translate_text",
+      "description": "Translate text between languages",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string", "description": "Text to translate"},
+          "source_lang": {"type": "string", "description": "Source language code"},
+          "target_lang": {"type": "string", "description": "Target language code"}
+        },
+        "required": ["text", "target_lang"]
+      }
+    },
+    {
+      "name": "generate_image",
+      "description": "Generate an image from a text prompt",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {"type": "string", "description": "Text description of desired image"},
+          "width": {"type": "number", "description": "Image width in pixels"},
+          "height": {"type": "number", "description": "Image height in pixels"},
+          "style": {"type": "string", "description": "Art style (realistic, cartoon, abstract)"}
+        },
+        "required": ["prompt"]
+      }
+    },
+    {
+      "name": "analyze_sentiment",
+      "description": "Analyze sentiment of a text passage",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string", "description": "Text to analyze"},
+          "language": {"type": "string", "description": "Language of the text"}
+        },
+        "required": ["text"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@jsonmd/cli",
+  "version": "0.1.0",
+  "description": "CLI for jsonmd - convert JSON to Markdown",
+  "type": "module",
+  "bin": {
+    "jsonmd": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --target node18 --clean"
+  },
+  "dependencies": {
+    "jsonmd": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  },
+  "license": "MIT"
+}
